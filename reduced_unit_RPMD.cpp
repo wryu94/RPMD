@@ -276,7 +276,7 @@ int main()
     
     cout << "Exporting the position ACF..." << endl;
     FILE * pcorr;
-    pcorr = fopen ("corr.txt", "w");
+    pcorr = fopen ("position_ACF.txt", "w");
     for (int i = 0 ; i < corr_length ; ++i)
     {
         fprintf(pcorr, "%lf    %lf\n", i*dt, corr_avg[i]);
